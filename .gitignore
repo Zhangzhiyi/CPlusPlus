@@ -11,3 +11,8 @@
 *.lai
 *.la
 *.a
+/HelloWorld/Debug
+/HelloWorld/TestVirtual/Debug
+/HelloWorld/HelloWorld/Debug
+/HelloWorld/ipch
+/HelloWorld/HelloWorld.sdf
