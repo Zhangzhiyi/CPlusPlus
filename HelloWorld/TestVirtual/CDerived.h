@@ -10,6 +10,7 @@ public:
 	//派生类独有的方法
 	void range();
 	
+	void name();
 	int m_num;
 };
 
