@@ -8,6 +8,6 @@ public:
 	~ClxString(void);
 	char* getString() const{return m_pString;}
 private:
-	char *m_pString;
+	char *m_pString; // 像这种指针成员变量记得写自己的复制构造函数和赋值操作符函数
 };
 
