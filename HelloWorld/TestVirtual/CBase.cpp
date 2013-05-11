@@ -20,4 +20,9 @@ void CBase::Test()
 void CBase::show()
 {
 	cout << "I am CBase!" << endl;
-};
+}
+
+void CBase::name()
+{
+	cout <<"I ' m CBase!" << endl;
+}

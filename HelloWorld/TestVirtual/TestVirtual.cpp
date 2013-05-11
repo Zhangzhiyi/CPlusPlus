@@ -34,6 +34,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	//base.Test();
 
 	CDerived derived;
+	derived.name();
 	CBase* p = &derived; //隐式向上强制转换
 	//当一个derived class object被交出去当作一个base class object时，
 	//它原本所以“成为一个derived class object”的所有特征，都会被切除（slicing）掉，只留下内部一个base class object。
@@ -78,7 +79,9 @@ int _tmain(int argc, _TCHAR* argv[])
 	children->show1();
 	Person *person1 = children;
 	//show2()没有使用virtual关键字，程序将根据引用或者指针类型选择方法。忠告：绝对不要重新定义继承而来的非虚拟函数
-	person1->show2(); 
+	person1->show2(); //Person::show2()
+	Children* children2 = (Children*)person;//显式向下强制转换
+	children2->show2(); //Children::show2()  发现转型之后还是可以调用Children的函数的，因为编译的时函数内存地址已经确定，如果函数里面需要用到this指针调用到成员变量就不安全
 	Person *person2 = new Children();
 	//person2->show4(); person2并不能调用show4()，只能调用Person类方法;
 	person2->hide();
