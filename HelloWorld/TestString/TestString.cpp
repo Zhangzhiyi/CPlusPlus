@@ -22,6 +22,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	pc[9] = '\0'; //记得补0或者NULL
 	cout << pc << endl;
 
+	char pc2[10] = {0};//这样写可以字符串数组元素全部初始化为0了
+
 	char a[] = "abc"; //记得后面还有0哦
 	unsigned int length = strlen(a) + 1; //4  记得后面还有0哦，所以要 + 1
 	char *b = new char[length];//没有初始化，值不确定
