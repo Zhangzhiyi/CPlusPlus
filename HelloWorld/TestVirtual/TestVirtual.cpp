@@ -52,11 +52,13 @@ int _tmain(int argc, _TCHAR* argv[])
 	CDerived* derived3 = dynamic_cast<CDerived*>(&base);//用dynamic_cast来转换类型可以检查转换是否安全成功，失败返回空指针
 	if (derived3)
 	{
+		cout<< "derived3 dynamic_cast successful !!" <<endl;
 		derived3->range();
 	}
 	CDerived* derived4 = dynamic_cast<CDerived*>(p);
 	if (derived4)
 	{
+		cout<< "derived4 dynamic_cast successful !!" <<endl;
 		derived4->range();
 	}
 	derived2->Test();//Output from CBase （根据对象类型来判断）
