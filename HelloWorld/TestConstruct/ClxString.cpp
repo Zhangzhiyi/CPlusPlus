@@ -2,6 +2,7 @@
 #include "ClxString.h"
 #include <iostream>
 
+int ClxString::num_strings = 0;
 ClxString::ClxString(int length)
 {
 	if (length > 0)
