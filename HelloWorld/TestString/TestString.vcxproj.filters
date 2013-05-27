@@ -2,8 +2,8 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Classes">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>      
-    </Filter>    
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+    </Filter>
     <Filter Include="资源文件">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
@@ -13,19 +13,19 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
+    <ClCompile Include="Classes\stdafx.cpp">
       <Filter>Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
+    </ClCompile>
+    <ClCompile Include="Classes\TestString.cpp">
       <Filter>Classes</Filter>
-    </ClInclude>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
+    <ClInclude Include="Classes\stdafx.h">
       <Filter>Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="TestString.cpp">
+    </ClInclude>
+    <ClInclude Include="Classes\targetver.h">
       <Filter>Classes</Filter>
-    </ClCompile>
+    </ClInclude>
   </ItemGroup>
 </Project>

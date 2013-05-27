@@ -13,25 +13,25 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
+    <ClCompile Include="Classes\CNullPointCall.cpp">
       <Filter>Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
+    </ClCompile>
+    <ClCompile Include="Classes\stdafx.cpp">
       <Filter>Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="CNullPointCall.h">
+    </ClCompile>
+    <ClCompile Include="Classes\TestThisPoint.cpp">
       <Filter>Classes</Filter>
-    </ClInclude>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
+    <ClInclude Include="Classes\CNullPointCall.h">
       <Filter>Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="TestThisPoint.cpp">
+    </ClInclude>
+    <ClInclude Include="Classes\stdafx.h">
       <Filter>Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="CNullPointCall.cpp">
+    </ClInclude>
+    <ClInclude Include="Classes\targetver.h">
       <Filter>Classes</Filter>
-    </ClCompile>
+    </ClInclude>
   </ItemGroup>
 </Project>

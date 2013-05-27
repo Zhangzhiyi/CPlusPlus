@@ -75,19 +75,20 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ClxComplex.h" />
-    <ClInclude Include="ClxString.h" />
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ABEntry.h" />
+    <ClInclude Include="Classes\ABEntry.h" />
+    <ClInclude Include="Classes\ClxComplex.h" />
+    <ClInclude Include="Classes\ClxString.h" />
+    <ClInclude Include="Classes\stdafx.h" />
+    <ClInclude Include="Classes\targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ClxComplex.cpp" />
-    <ClCompile Include="ClxString.cpp" />
-    <ClCompile Include="stdafx.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="TestConstruct.cpp" />
+    <ClCompile Include="ABEntry.cpp" />
+    <ClCompile Include="Classes\ABEntry.cpp" />
+    <ClCompile Include="Classes\ClxComplex.cpp" />
+    <ClCompile Include="Classes\ClxString.cpp" />
+    <ClCompile Include="Classes\stdafx.cpp" />
+    <ClCompile Include="Classes\TestConstruct.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

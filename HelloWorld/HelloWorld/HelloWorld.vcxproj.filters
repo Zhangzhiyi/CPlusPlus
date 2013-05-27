@@ -10,31 +10,31 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
+    <ClCompile Include="Classes\main.cpp">
       <Filter>Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
+    </ClCompile>
+    <ClCompile Include="Classes\Person.cpp">
       <Filter>Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="Person.h">
+    </ClCompile>
+    <ClCompile Include="Classes\stdafx.cpp">
       <Filter>Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="tabtenn0.h">
+    </ClCompile>
+    <ClCompile Include="Classes\tabtenn0.cpp">
       <Filter>Classes</Filter>
-    </ClInclude>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
+    <ClInclude Include="Classes\Person.h">
       <Filter>Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="Person.cpp">
+    </ClInclude>
+    <ClInclude Include="Classes\stdafx.h">
       <Filter>Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="tabtenn0.cpp">
+    </ClInclude>
+    <ClInclude Include="Classes\tabtenn0.h">
       <Filter>Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
+    </ClInclude>
+    <ClInclude Include="Classes\targetver.h">
       <Filter>Classes</Filter>
-    </ClCompile>
+    </ClInclude>
   </ItemGroup>
 </Project>
