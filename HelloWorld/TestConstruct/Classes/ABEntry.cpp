@@ -11,7 +11,7 @@ ABEntry::ABEntry()
 C++规定，对象的成员变量初始化动作发生在进入构造函数本体之前，在ABEntry构造函数内，
 theName，theAddress，thePhones都不是初始化，是赋值。初始化发生的时间更早。
 下面两个构造函数，第一个版本的构造函数效率更高。第二个基于赋值构造函数版本首先调用默认构造函数为
-theName，theAddress，thePhones设置初值了，然后立刻再对他们赋予新值。默认构造函数的一切作为因此浪费了。
+theName，theAddress，thePhones初始化设置初值了，然后立刻再对他们赋予新值。默认构造函数的一切作为因此浪费了。
 成员列表初值构造函数版本避免了这一问题。
 **/
 ABEntry::ABEntry(const string& name, const string& address, list<PhoneNumber>& phones):
@@ -24,7 +24,8 @@ numTimesConsulted(0)
 }
 ABEntry::ABEntry(const string& name, const string& address, list<PhoneNumber>& phones, int num)
 {
-	//这些都是赋值，不是初始化。 因为进入此构造函数体之前theName，theAddress，thePhones已经分别调用它们各自的默认构造函数初始化了
+	//进入此构造函数体之前theName，theAddress，thePhones已经分别调用它们各自的默认构造函数初始化了
+	//所以以下这些都是赋值，不是初始化。 即是 
 	theName = name;		
 	theAddress = address;
 	thePhones = phones;
