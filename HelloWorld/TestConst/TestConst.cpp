@@ -13,6 +13,10 @@
 //“值传递”和“引用传递”的效率几乎相当。该输入参数本来就无需保护，所以不要加const 修饰。
 //否则既达不到提高效率的目的，又降低了函数的可理解性。例如void Func(int x) 不应该改为void Func(const int &x)。
 
+//3、如果函数返回值采用“值传递方式”，由于函数会把返回值复制到外部临时的存储单元中，加const 修饰没有任何价值
+//例如不要把函数int GetInt(void) 写成const int GetInt(void)。
+//同理不要把函数A GetA(void) 写成const A GetA(void)，其中A 为用户自定义的数据类型
+
 void setAge(int age);//内部数据值传递
 void showPerson(Person person);//这种会产生临时变量
 void showPerson(Person& person);//引用传递.不产生临时变量，效率快

@@ -11,5 +11,8 @@ private:
 	char *m_pString; // 像这种指针成员变量记得写自己的复制构造函数和赋值操作符函数
 	int m_length;
 	static int num_strings;
+	enum {NumTurns = 5};
+	static const int Numbers = 10; 
+	int scroes[Numbers];
 };
 
