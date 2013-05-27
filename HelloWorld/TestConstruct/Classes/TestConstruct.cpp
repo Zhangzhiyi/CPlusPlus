@@ -5,7 +5,7 @@
 #include "ClxComplex.h"
 #include "ClxString.h"
 #include <iostream>
-
+#include "ABEntry.h"
 using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -24,6 +24,11 @@ int _tmain(int argc, _TCHAR* argv[])
 	ClxString lsTest2 = "ABC";  // 等同于ClxString lsTest2 = ClxString("A");
 	ClxString lsTest3 = 'A';	// 等同于ClxString lsTest2 = ClxString(65);这种情况都不是我们希望看到的。在这个时候我们就要用到显式构造函数了,将构造函数声明成explicit就可以防止隐式转换
 	cout << lsTest2.getString() << endl;
+
+	ABEntry entry;
+	list<PhoneNumber> phones;
+	ABEntry entry2 = ABEntry("entry2", "entry2", phones);
+	ABEntry entry3 = ABEntry("entry3", "entry3", phones, 0);
 	system("Pause");
 	return 0;
 }

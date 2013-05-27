@@ -13,7 +13,6 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ABEntry.h" />
     <ClInclude Include="Classes\ABEntry.h">
       <Filter>Classes</Filter>
     </ClInclude>
@@ -31,7 +30,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ABEntry.cpp" />
     <ClCompile Include="Classes\ABEntry.cpp">
       <Filter>Classes</Filter>
     </ClCompile>

@@ -75,7 +75,6 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ABEntry.h" />
     <ClInclude Include="Classes\ABEntry.h" />
     <ClInclude Include="Classes\ClxComplex.h" />
     <ClInclude Include="Classes\ClxString.h" />
@@ -83,7 +82,6 @@
     <ClInclude Include="Classes\targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ABEntry.cpp" />
     <ClCompile Include="Classes\ABEntry.cpp" />
     <ClCompile Include="Classes\ClxComplex.cpp" />
     <ClCompile Include="Classes\ClxString.cpp" />
