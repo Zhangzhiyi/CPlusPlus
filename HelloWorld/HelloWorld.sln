@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestConst", "TestConst\Test
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestVector", "TestVector\TestVector.vcxproj", "{A1935E25-CA46-40AD-A566-8B079AE73F05}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestCopyAssign", "TestCopyAssign\TestCopyAssign.vcxproj", "{84018307-2776-43F8-8225-FB30631D595D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -61,6 +63,10 @@ Global
 		{A1935E25-CA46-40AD-A566-8B079AE73F05}.Debug|Win32.Build.0 = Debug|Win32
 		{A1935E25-CA46-40AD-A566-8B079AE73F05}.Release|Win32.ActiveCfg = Release|Win32
 		{A1935E25-CA46-40AD-A566-8B079AE73F05}.Release|Win32.Build.0 = Release|Win32
+		{84018307-2776-43F8-8225-FB30631D595D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{84018307-2776-43F8-8225-FB30631D595D}.Debug|Win32.Build.0 = Debug|Win32
+		{84018307-2776-43F8-8225-FB30631D595D}.Release|Win32.ActiveCfg = Release|Win32
+		{84018307-2776-43F8-8225-FB30631D595D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
