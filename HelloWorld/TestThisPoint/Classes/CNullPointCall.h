@@ -1,4 +1,6 @@
-#pragma once
+#ifndef __C_NULLPOINT_CALL_H__
+#define __C_NULLPOINT_CALL_H__
+
 class CNullPointCall
 {
 public:
@@ -13,4 +15,4 @@ private:
 	static int m_iStatic;
 	int m_iTest;
 };
-
+#endif

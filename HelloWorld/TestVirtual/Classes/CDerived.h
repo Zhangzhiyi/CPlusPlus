@@ -1,4 +1,6 @@
-#pragma once
+#ifndef __CDERIVED_H__
+#define __CDERIVED_H__
+
 #include "CBase.h"
 class CDerived :public CBase
 {
@@ -14,3 +16,4 @@ public:
 	int m_num;
 };
 
+#endif

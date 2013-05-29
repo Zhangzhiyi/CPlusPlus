@@ -1,4 +1,6 @@
-#pragma once
+#ifndef __STRINGBAD_H__
+#define __STRINGBAD_H__
+
 #include <iostream>
 
 using namespace std;
@@ -15,3 +17,4 @@ private:
 		int len;
 		static int num_strings;
 };
+#endif

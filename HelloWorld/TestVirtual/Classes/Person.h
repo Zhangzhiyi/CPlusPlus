@@ -1,4 +1,6 @@
-#pragma once
+#ifndef __PERSON_H__
+#define __PERSON_H__
+
 class Person
 {
 public:
@@ -35,3 +37,4 @@ public:
 	void testOverride(int);
 };
 
+#endif

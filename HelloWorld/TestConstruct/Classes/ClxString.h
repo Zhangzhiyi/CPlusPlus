@@ -1,4 +1,6 @@
-#pragma once
+#ifndef __CLXSTRING_H__
+#define __CLXSTRING_H__
+
 class ClxString
 {
 public:
@@ -17,4 +19,4 @@ private:
 	int scroes[Numbers];
 	
 };
-
+#endif

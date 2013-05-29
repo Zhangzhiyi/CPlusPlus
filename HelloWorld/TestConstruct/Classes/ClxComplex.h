@@ -1,4 +1,5 @@
-#pragma once
+#ifndef __CLXCOMPLEX_H__
+#define __CLXCOMPLEX_H__
 #include <iostream>
 using namespace std;
 class ClxComplex
@@ -17,4 +18,4 @@ private:
 	double m_dReal;
 	double m_dImage;
 };
-
+#endif

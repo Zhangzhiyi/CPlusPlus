@@ -1,4 +1,6 @@
-#pragma once
+#ifndef __ABENTRY_H__
+#define __ABENTRY_H__
+
 #include <iostream>
 #include <string>
 #include <list>
@@ -24,3 +26,4 @@ private:
 
 class PhoneNumber {};
 
+#endif

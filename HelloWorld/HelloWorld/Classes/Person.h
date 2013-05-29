@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _PERSON_H_
+#define _PERSON_H_
 class Person
 {
 public:
@@ -32,3 +33,4 @@ public:
 	void call(int i);
 };
 
+#endif
