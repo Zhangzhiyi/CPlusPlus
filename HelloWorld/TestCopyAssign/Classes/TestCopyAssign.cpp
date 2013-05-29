@@ -53,6 +53,8 @@ int _tmain(int argc, _TCHAR* argv[])
 		cout << "Initialize one object to another:\n";
 		StringGood sailor = sports;  //这不是赋值，是调用复制构造函数，一个新建的对象总是会调用构造函数的
 		cout << "sailor: " << sailor << endl;
+		StringGood* psg = new StringGood(sports); //这种方式也是调用复制构造函数
+		cout << "psg: " << *psg << endl;
 
 		cout << "Assign one object to another:\n";
 		StringGood knot;
@@ -60,6 +62,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		cout << "knot: " << knot << endl;
 		knot = "operator = (const char* s)";//调用赋值运算符函数 operator = (const char* s);
 		cout << "knot: " << knot << endl;
+		
 
 		StringGood kail = getStringGood();
 		cout << "kail: " << kail << endl;
