@@ -51,7 +51,7 @@ void setRate(RatePlayer ratePlayer)//²úÉú±äÁ¿¸±±¾²¢Ã»ÓĞµ÷ÓÃ¹¹Ôìº¯Êı£¬ÊÇµ÷ÓÃÄ¬ÈÏ¸
 TableTennisPlayer getTableTennisPlayer() //·µ»Ø¶ÔÏó
 {
 	TableTennisPlayer player("zhang", "zhiyi", true);
-	return player; //player¶ÔÏó¸´ÖÆ¸ø×óÖµºó¾Í»á¸øÊÍ·Åµô,µ÷ÓÃÎö¹¹º¯Êı
+	return player; //player¶ÔÏó¸´ÖÆ¸ø×óÖµºó¾Í»á¸øÊÍ·Åµô,×îºóµ÷ÓÃÎö¹¹º¯Êı
 }
 TableTennisPlayer getTableTennisPlayer(const TableTennisPlayer & player)//·µ»Ø¶ÔÏó
 {

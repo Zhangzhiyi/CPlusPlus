@@ -77,11 +77,13 @@
   <ItemGroup>
     <ClCompile Include="Classes\stdafx.cpp" />
     <ClCompile Include="Classes\StringBad.cpp" />
+    <ClCompile Include="Classes\StringGood.cpp" />
     <ClCompile Include="Classes\TestCopyAssign.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes\stdafx.h" />
     <ClInclude Include="Classes\StringBad.h" />
+    <ClInclude Include="Classes\StringGood.h" />
     <ClInclude Include="Classes\targetver.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

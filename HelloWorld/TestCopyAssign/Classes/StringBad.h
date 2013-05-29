@@ -5,6 +5,9 @@
 
 using namespace std;
 
+/**
+	StringBad是没有开发好的示例，故意留下漏洞来测试
+**/
 class StringBad
 {
 public:
