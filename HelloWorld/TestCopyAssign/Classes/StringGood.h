@@ -2,6 +2,10 @@
 #define __STRINGGOOD_H__
 #include <iostream>
 using namespace std;
+
+/**
+	改进StringBad之后的类
+**/
 class StringGood
 {
 public:

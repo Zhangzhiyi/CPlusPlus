@@ -55,11 +55,19 @@ int _tmain(int argc, _TCHAR* argv[])
 		cout<< "derived3 dynamic_cast successful !!" <<endl;
 		derived3->range();
 	}
+	else
+	{
+		cout<< "derived3 dynamic_cast failed !!" <<endl;
+	}
 	CDerived* derived4 = dynamic_cast<CDerived*>(p);
 	if (derived4)
 	{
 		cout<< "derived4 dynamic_cast successful !!" <<endl;
 		derived4->range();
+	}
+	else
+	{
+		cout<< "derived4 dynamic_cast failed !!" <<endl;
 	}
 	derived2->Test();//Output from CBase （根据对象类型来判断）
 	

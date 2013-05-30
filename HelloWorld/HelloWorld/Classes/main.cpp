@@ -6,22 +6,8 @@
 #include "Person.h"
 #include "tabtenn0.h"
 
-int num ;
 using namespace std;
-void show(){
-	num ++;
-	printf("show:%d\n", num);
-}
-void increase(int *_i)
-{
-	*_i = *_i + 1 ;
-	cout << "increase *:" << *_i << endl;
-}
-void increase(int &_i)
-{
-	_i = _i + 1 ;
-	cout << "increase &:" << _i << endl;
-}
+
 char* getPointChar()
 {
 	char *c = "getChar()";
@@ -76,13 +62,6 @@ RatePlayer & getRatePlayer() //返回局部变量引用 函数不能返回在函数中创建的临时对
 int TableTennisPlayer::kkk = 100;
 int _tmain(int argc, _TCHAR* argv[])
 {
-	num = 10;
-	
-	char c = 'c';
-	int y = 1;
-	int result = M;
-	printf("%d\n", result);
-	show();
 
 	TableTennisPlayer player1 ("Chunk", "Blizzard", true);
 	RatePlayer rplayer1(1140, player1);
@@ -93,20 +72,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	//调用类的静态成员
 	cout << "TableTennisPlayer static:" << TableTennisPlayer::kkk<< endl;
 	cout << "TableTennisPlayer static const:" << TableTennisPlayer::kkk2<< endl;
-	
-	//指针作函数参数修改后影响了val的值
-	int val = 999;
-	int *_int = &val;
-	cout << "*_int:" << *_int << endl;
-	increase(_int);
-	cout << "val:" << val << endl;
-	//引用作函数参数修改了也影响了val2的值
-	int val2 = 999;
-	int &_int2 = val2;
-	cout << "&_int2:" << _int2 << endl;
-	increase(_int2);
-	cout << "val2:" << val2 << endl;
-	
+		
 	RatePlayer &rplayer2  = getRatePlayer(); //得到局部变量引用，可惜引用已经释放掉了
 	cout << "Rating:" << rplayer2.Rating() << endl; //输出不是正确的结果
 
