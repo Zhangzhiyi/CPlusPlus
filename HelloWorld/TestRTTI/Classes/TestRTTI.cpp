@@ -148,6 +148,18 @@ int _tmain(int argc, _TCHAR* argv[])
 
 		//无关类型不可以转换
 		//Base* pb = static_cast<Base*>(&grand); //error C2440: “static_cast”: 无法从“Grand *”转换为“Base *”
+
+		//C++特许指针void指针
+		void* vps = ps;
+		Superb * ps2 = static_cast<Superb*>(vps);
+		ps2->Speak();  //I am a Magnificent class
+		ps2->Say(); //// I hold the character  A and the integer 0 !
+
+		void* vc = "void指针转char*";
+		char* data = static_cast<char*>(vc);
+		cout << data <<endl;
+		char* data2 = (char*)vc;
+		cout << data2 <<endl;
 	}
 
 
@@ -162,11 +174,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	
 
-	void* vc = "1234";
-	char* data = static_cast<char*>(vc);
-	cout << data <<endl;
-	char* data2 = (char*)vc;
-	cout << data2 <<endl;
+	
 	system("Pause");
 	return 0;
 }
