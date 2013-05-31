@@ -5,7 +5,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
-
+#include <typeinfo>
 using namespace std;
 class Grand
 {
@@ -71,9 +71,13 @@ int _tmain(int argc, _TCHAR* argv[])
 		pg = getOne();
 		cout << "Now Processing type " << typeid(*pg).name() <<".!\n";
 		pg->Speak();
+		//dynamic_cast运算符只能用于向上转型，向下转型会返回空指针
 		if (ps = dynamic_cast<Superb*>(pg))
 		{
 			ps->Say();
+		}
+		else{
+			cout << typeid(*pg).name() << " dynamic_cast  Superb failed!!\n";
 		}
 		/**typeid运算符使得能够确定两个对象是否为同种类型。typeid运算符返回一个对type_info对象的引用**/
 		if (typeid(Magnificent) == typeid(*pg))
@@ -84,25 +88,55 @@ int _tmain(int argc, _TCHAR* argv[])
 	/*如果表达式的类型是类类型且至少包含有一个虚函数，则typeid操作符返回表达式的动态类型，
 	需要在运行时计算；否则，typeid操作符返回表达式的静态类型，在编译时就可以计算
 	
-	因为包含虚函数的类编译器会适用动态联编，否则将使用静态联编。
+	因为包含虚函数的类编译器会适用动态联编，否则将使用静态联编。如果表达式的类型是类类型且至少包含有一个虚函数，
+	则typeid操作符返回表达式的动态类型，需要在运行时计算；否则，typeid操作符返回表达式的静态类型，在编译时就可以计算。
 	
 	*/
-
 	//当typeid操作符的操作数是不带有虚函数的类类型时，typeid操作符会指出指针的类型，而不是底层对象的类型。
 	Base* pbase = new Derived();
 	cout << typeid(*pbase).name() << endl; // class Base
-	//注意：dynamic_cast运算符只能适用于包含虚函数的类。
+	//注意：dynamic_cast运算符只能适用于包含虚函数的类，否则在编译期间就会出现错误
 	//Derived* pderived = dynamic_cast<Derived*>(pbase);//编译错误 “dynamic_cast”:“Base”不是多态类型
 	Derived* pderived = static_cast<Derived*>(pbase);
 	cout << typeid(*pderived).name() << endl;
 
+	/**
+		dynamic_cast也可以用于引用的转换，其用法稍微不同：没有与空指针对应的引用值，因此无法使用特殊的引用值指示失败。当请求不正确时，
+		dynamic_cast将引发类型为bad_cast的异常，这种异常时从exception类派生而来的，它是在头文件typeinfo中定义的。
+	**/
+	cout << "----------测试dynamic_cast用于引用的转换----------\n";
+	Magnificent magnificent;
+	Grand & rgrand = magnificent;
+	cout << typeid(rgrand).name() << endl;
+	Magnificent rmagnificent = dynamic_cast<Magnificent&>(rgrand);
+	cout << typeid(rmagnificent).name() << endl;
+
+	Grand grand;
+	Grand & rg = grand;
+	try
+	{
+		//不可以向下转型，引用转型抛出异常
+		Superb & rs = dynamic_cast<Superb &>(rg);
+	}
+	catch(bad_cast & bc){
+		cout << "bad_cast" << endl;
+	}
+
+
+	cout << "----------测试typeid的输出----------\n";
 	Magnificent m;
 	Magnificent & rm = m;
-	cout << typeid(m).name() << endl;
-	cout << typeid(rm).name() << endl;
+	cout << typeid(m).name() << endl;  //class Magnificent
+	cout << typeid(rm).name() << endl; //class Magnificent
 	Magnificent* pm = new Magnificent();
-	cout << typeid(pm).name() << endl;
-	cout << typeid(*pm).name() << endl;
+	cout << typeid(pm).name() << endl; //class Magnificent *
+	cout << typeid(*pm).name() << endl; //class Magnificent
+
+	
+
+	void* vc = "1234";
+	char* data = reinterpret_cast<char*>(vc);
+	cout << data <<endl;
 	system("Pause");
 	return 0;
 }
