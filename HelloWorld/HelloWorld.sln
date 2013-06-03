@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestCopyAssign", "TestCopyA
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestRTTI", "TestRTTI\TestRTTI.vcxproj", "{E644BF79-905B-475C-8606-8938B36CAA25}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestException", "TestException\TestException.vcxproj", "{746006C7-2AEC-4D51-87A8-77DA6189048F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -73,6 +75,10 @@ Global
 		{E644BF79-905B-475C-8606-8938B36CAA25}.Debug|Win32.Build.0 = Debug|Win32
 		{E644BF79-905B-475C-8606-8938B36CAA25}.Release|Win32.ActiveCfg = Release|Win32
 		{E644BF79-905B-475C-8606-8938B36CAA25}.Release|Win32.Build.0 = Release|Win32
+		{746006C7-2AEC-4D51-87A8-77DA6189048F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{746006C7-2AEC-4D51-87A8-77DA6189048F}.Debug|Win32.Build.0 = Debug|Win32
+		{746006C7-2AEC-4D51-87A8-77DA6189048F}.Release|Win32.ActiveCfg = Release|Win32
+		{746006C7-2AEC-4D51-87A8-77DA6189048F}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
