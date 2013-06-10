@@ -12,7 +12,9 @@ DerivedStringGood::DerivedStringGood()
 DerivedStringGood::DerivedStringGood(char* name):
 StringGood("DerivedStringGood") //调用基类的构造方法，不写就调用基类默认构造方法
 {
-	
+	int len = strlen(name);
+	m_name = new char[len + 1];
+	strcpy(m_name, name);
 }
 DerivedStringGood::DerivedStringGood(const DerivedStringGood& dsg):
 StringGood(dsg) //调用基类的复制构造函数
