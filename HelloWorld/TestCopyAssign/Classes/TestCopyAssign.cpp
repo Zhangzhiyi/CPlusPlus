@@ -5,6 +5,7 @@
 #include <iostream>
 #include "StringBad.h"
 #include "StringGood.h"
+#include "DerivedStringGood.h"
 using namespace std;
 
 void callme1(StringBad & rsb);
@@ -55,6 +56,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		cout << "sailor: " << sailor << endl;
 		StringGood* psg = new StringGood(sports); //这种方式也是调用复制构造函数
 		cout << "psg: " << *psg << endl;
+		delete psg;
 
 		cout << "Assign one object to another:\n";
 		StringGood knot;
@@ -67,6 +69,11 @@ int _tmain(int argc, _TCHAR* argv[])
 		StringGood kail = getStringGood();
 		cout << "kail: " << kail << endl;
 		cout << "Exitting the block.\n";
+	}
+	{
+		DerivedStringGood d("DerivedStringGood");
+		DerivedStringGood d2 = d;
+		int a = 10;
 	}
 	system("Pause");
 	return 0;

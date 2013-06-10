@@ -45,7 +45,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -75,12 +75,14 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Classes\DerivedStringGood.cpp" />
     <ClCompile Include="Classes\stdafx.cpp" />
     <ClCompile Include="Classes\StringBad.cpp" />
     <ClCompile Include="Classes\StringGood.cpp" />
     <ClCompile Include="Classes\TestCopyAssign.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Classes\DerivedStringGood.h" />
     <ClInclude Include="Classes\stdafx.h" />
     <ClInclude Include="Classes\StringBad.h" />
     <ClInclude Include="Classes\StringGood.h" />
