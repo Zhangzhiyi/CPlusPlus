@@ -15,6 +15,6 @@ public:
 	DerivedStringGood & operator = (const DerivedStringGood& dsg);
 
 private:
-	char* m_name; //派生类新增成员指针变量，需要为派生类重新编写复制构造函数和赋值操作函数
+	char* m_name; //派生类新增成员指针变量，需要为派生类重新编写复制构造函数和赋值操作函数，否则会出现不安全操作
 };
 #endif
