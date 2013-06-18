@@ -28,7 +28,7 @@ StringGood::StringGood(const StringGood& st)
 }
 StringGood & StringGood::operator= (const StringGood& st)
 {
-		if (this == &st)
+		if (this == &st)  //注意：这里要注意判断一下是否是同一个对象，否则是不安全的赋值操作
 		{
 			return *this;
 		}

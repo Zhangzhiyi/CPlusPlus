@@ -11,7 +11,7 @@ class StringGood
 public:
 	
 	StringGood();
-	~StringGood();
+	virtual ~StringGood();
 	StringGood(const char* s);
 	StringGood(const StringGood& st);  //复制构造函数
 	StringGood & operator = (const StringGood& st);//赋值运算符
