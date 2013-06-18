@@ -97,6 +97,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << typeid(*pbase).name() << endl; // class Base
 	//注意：dynamic_cast运算符只能适用于包含虚函数的类，否则在编译期间就会出现错误
 	//Derived* pderived = dynamic_cast<Derived*>(pbase);//编译错误 “dynamic_cast”:“Base”不是多态类型
+	Base *pb2 = dynamic_cast<Base*>(new Derived()); //编译期间已经确定类型了，所以这里不会报错
+	cout << typeid(*pb2).name() << endl;
 	Derived* pderived = static_cast<Derived*>(pbase);
 	cout << typeid(*pderived).name() << endl;
 
