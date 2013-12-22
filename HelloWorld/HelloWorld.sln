@@ -1,11 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloWorld", "HelloWorld\HelloWorld.vcxproj", "{F9E81CE1-0E8B-4F95-AAA7-BCE127C4D17A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestCallback", "TestCallback\TestCallback.vcxproj", "{F0C496A5-8149-49D2-8B09-10686889BD45}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestVirtual", "TestVirtual\TestVirtual.vcxproj", "{88DCA1F5-D339-4D7E-BECA-B7011BAD18EB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestVirtualMethod", "TestVirtual\TestVirtual.vcxproj", "{88DCA1F5-D339-4D7E-BECA-B7011BAD18EB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileOperation", "FileOperation\FileOperation.vcxproj", "{DC17D4EA-B1D2-4A16-92D2-7408ADDAE365}"
 EndProject
@@ -24,6 +26,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestRTTI", "TestRTTI\TestRTTI.vcxproj", "{E644BF79-905B-475C-8606-8938B36CAA25}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestException", "TestException\TestException.vcxproj", "{746006C7-2AEC-4D51-87A8-77DA6189048F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestVirtualClass", "TestVirtualClass\TestVirtualClass.vcxproj", "{968F4EBB-F02F-4C72-BA1C-379568D84CB6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +83,10 @@ Global
 		{746006C7-2AEC-4D51-87A8-77DA6189048F}.Debug|Win32.Build.0 = Debug|Win32
 		{746006C7-2AEC-4D51-87A8-77DA6189048F}.Release|Win32.ActiveCfg = Release|Win32
 		{746006C7-2AEC-4D51-87A8-77DA6189048F}.Release|Win32.Build.0 = Release|Win32
+		{968F4EBB-F02F-4C72-BA1C-379568D84CB6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{968F4EBB-F02F-4C72-BA1C-379568D84CB6}.Debug|Win32.Build.0 = Debug|Win32
+		{968F4EBB-F02F-4C72-BA1C-379568D84CB6}.Release|Win32.ActiveCfg = Release|Win32
+		{968F4EBB-F02F-4C72-BA1C-379568D84CB6}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
