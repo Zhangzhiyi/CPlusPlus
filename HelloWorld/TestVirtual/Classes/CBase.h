@@ -9,7 +9,8 @@ public:
 	virtual void Test();
 	virtual void show();
 
-	void name(); //CBase和CDerived都有的方法，但不是虚方法
+	virtual void name(); //CBase和CDerived都有的方法，但不是虚方法
+
 };
 
 #endif

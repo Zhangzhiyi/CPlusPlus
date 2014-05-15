@@ -29,6 +29,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestException", "TestExcept
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestVirtualClass", "TestVirtualClass\TestVirtualClass.vcxproj", "{968F4EBB-F02F-4C72-BA1C-379568D84CB6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestStatic", "TestStatic\TestStatic.vcxproj", "{057D04B2-1E5E-4C2D-A235-BB98BCCE2FBA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestFunction", "TestFunction\TestFunction.vcxproj", "{098C2C8F-7092-4E56-83CD-B41BEB9EFB06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -87,6 +91,14 @@ Global
 		{968F4EBB-F02F-4C72-BA1C-379568D84CB6}.Debug|Win32.Build.0 = Debug|Win32
 		{968F4EBB-F02F-4C72-BA1C-379568D84CB6}.Release|Win32.ActiveCfg = Release|Win32
 		{968F4EBB-F02F-4C72-BA1C-379568D84CB6}.Release|Win32.Build.0 = Release|Win32
+		{057D04B2-1E5E-4C2D-A235-BB98BCCE2FBA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{057D04B2-1E5E-4C2D-A235-BB98BCCE2FBA}.Debug|Win32.Build.0 = Debug|Win32
+		{057D04B2-1E5E-4C2D-A235-BB98BCCE2FBA}.Release|Win32.ActiveCfg = Release|Win32
+		{057D04B2-1E5E-4C2D-A235-BB98BCCE2FBA}.Release|Win32.Build.0 = Release|Win32
+		{098C2C8F-7092-4E56-83CD-B41BEB9EFB06}.Debug|Win32.ActiveCfg = Debug|Win32
+		{098C2C8F-7092-4E56-83CD-B41BEB9EFB06}.Debug|Win32.Build.0 = Debug|Win32
+		{098C2C8F-7092-4E56-83CD-B41BEB9EFB06}.Release|Win32.ActiveCfg = Release|Win32
+		{098C2C8F-7092-4E56-83CD-B41BEB9EFB06}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
