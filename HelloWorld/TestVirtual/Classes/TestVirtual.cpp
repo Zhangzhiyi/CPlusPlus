@@ -28,7 +28,7 @@ void Test3(CBase* test)//指针传递,会修改原来的值，函数会临时分配一个指针
 int _tmain(int argc, _TCHAR* argv[])
 {
 	//知识点：注意区分指针类型(编译时确定)和对象类型(运行时确定). 总之，非虚方法是根据指针类型来调用，虚方法是根据对象类型来调用
-	//指针类型(CBase)    对象类型(CDerived()
+	//指针类型(CBase)    对象类型(CDerived())
 	//CBase *pBase = new CDerived();
 	CBase base;
 	//base.Test();
@@ -98,6 +98,13 @@ int _tmain(int argc, _TCHAR* argv[])
 	person2->hide();
 	//children->hide(); //Person的hide()函数给隐藏了,不能调用
 	children->hide(1);
+
+	//子类在外部调用父类方法！！！！好奇怪的语法
+	Children child;
+	child.Person::show2();
+	Children *pChild = new Children();
+	pChild->Person::show2();
+
 	//测试覆盖
 	person1->testOverride(10);
 	person2->testOverride(10);
