@@ -10,8 +10,10 @@ public:
 	virtual void Test();
 	virtual void show();
 	//派生类独有的方法
+	virtual void derived_print();
 	void range();
 	
+
 	void name();
 	int m_num;
 };
