@@ -14,21 +14,25 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="targetver.h" />
-    <ClInclude Include="Base.h">
+    <ClCompile Include="Classes\Base.cpp">
       <Filter>Classes</Filter>
-    </ClInclude>
+    </ClCompile>
+    <ClCompile Include="Classes\stdafx.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\TestVirtualClass.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
+    <ClInclude Include="Classes\Base.h">
       <Filter>Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="TestVirtualClass.cpp">
+    </ClInclude>
+    <ClInclude Include="Classes\stdafx.h">
       <Filter>Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="Base.cpp">
+    </ClInclude>
+    <ClInclude Include="Classes\targetver.h">
       <Filter>Classes</Filter>
-    </ClCompile>
+    </ClInclude>
   </ItemGroup>
 </Project>

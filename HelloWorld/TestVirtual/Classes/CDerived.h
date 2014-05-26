@@ -10,8 +10,10 @@ public:
 	virtual void Test() override; //C++11 重写父类虚方法加上override
 	virtual void show() override;
 	//派生类独有的方法
+	virtual void derived_print();
 	void range();
 	
+
 	void name();
 	int m_num;
 };

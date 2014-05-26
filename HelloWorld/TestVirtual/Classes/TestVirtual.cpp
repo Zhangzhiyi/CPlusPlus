@@ -31,10 +31,14 @@ int _tmain(int argc, _TCHAR* argv[])
 	//指针类型(CBase)    对象类型(CDerived())
 	//CBase *pBase = new CDerived();
 	CBase base;
+	cout << "sizeof(base):" << sizeof(base) << endl; // 4
+	cout << sizeof(long long) << endl;
 	//base.Test();
 
 	CDerived derived;
+	cout << "sizeof(derived):" << sizeof(derived) << endl;
 	derived.name();
+	derived.derived_print();
 	CBase* p = &derived; //隐式向上强制转换
 	//当一个derived class object被交出去当作一个base class object时，
 	//它原本所以“成为一个derived class object”的所有特征，都会被切除（slicing）掉，只留下内部一个base class object。
