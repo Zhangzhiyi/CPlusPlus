@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{968F4EBB-F02F-4C72-BA1C-379568D84CB6}</ProjectGuid>
+    <ProjectGuid>{098C2C8F-7092-4E56-83CD-B41BEB9EFB06}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>TestVirtualClass</RootNamespace>
+    <RootNamespace>TestFunction</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -79,12 +79,10 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Classes\Base.cpp" />
     <ClCompile Include="Classes\stdafx.cpp" />
-    <ClCompile Include="Classes\TestVirtualClass.cpp" />
+    <ClCompile Include="Classes\TestFunction.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Classes\Base.h" />
     <ClInclude Include="Classes\stdafx.h" />
     <ClInclude Include="Classes\targetver.h" />
   </ItemGroup>

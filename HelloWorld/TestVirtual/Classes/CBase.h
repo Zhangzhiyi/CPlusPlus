@@ -10,6 +10,8 @@ public:
 	virtual void show();
 
 	void name(); //CBase和CDerived都有的方法，但不是虚方法
+
+	int m_first = 1;
 };
 
 #endif

@@ -25,3 +25,6 @@
 /HelloWorld/TestConst/Debug
 /HelloWorld/TestRTTI/Debug
 /HelloWorld/TestException/Debug
+/HelloWorld/TestStatic/Debug
+/HelloWorld/TestFunction/Debug
+/HelloWorld/TestVirtualClass/Debug
