@@ -42,7 +42,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	CBase* p = &derived; //隐式向上强制转换
 	//当一个derived class object被交出去当作一个base class object时，
 	//它原本所以“成为一个derived class object”的所有特征，都会被切除（slicing）掉，只留下内部一个base class object。
-	//以by reference的方式传递参数，有另一个优点：可避免所谓的“切割（slicing）问题”。
+	//以by reference的方式传递参数，有另一个优点：可避免所谓的“切割（slicing）问题”。引用是除指针外另一个可以产生多态效果的手段。
 	Test1(derived);//Output from CBase! 出现切割
 	Test2(derived);//Output from CDerived!
 	Test3(p);      //Output from CDerived!

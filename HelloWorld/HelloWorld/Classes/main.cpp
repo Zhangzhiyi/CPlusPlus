@@ -28,6 +28,11 @@ int & getReferenceInt()
 	int i = 999;
 	return i;
 }
+void arrayLen(int arr[])
+{
+	int len = sizeof(arr);
+	int ntype = sizeof(arr[0]);
+}
 //这样传递对象参数相当于值传递，函数将自动产生临时变量复制RatePlayer副本，所以在函数体内对ratePlayer修改不影响实参原来的值
 //区别RatePlayer *ratePlayer 或者 RatePlayer &ratePlayer
 void setRate(RatePlayer ratePlayer)//产生变量副本并没有调用构造函数，是调用默认复制构造函数
@@ -112,6 +117,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	char* pa = getPointCharArray(); //这里输出不是正确的结果 (难道是数组才给立马回收了？)
 	cout << pa << endl;
 
+	int arr[6] = {1, 2, 3, 4, 5, 6};
+	arrayLen(arr);
 	system("Pause");
 	return 0;
 }

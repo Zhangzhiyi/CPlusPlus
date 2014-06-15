@@ -5,6 +5,11 @@
 #include <iostream>
 #include <string.h>
 using namespace std;
+char * getCString()
+{
+	char * pstr = "This is a CString!";
+	return pstr;
+}
 int _tmain(int argc, _TCHAR* argv[])
 {
 	string str = "12345";
@@ -15,6 +20,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	int value2[100] = {1, 2};// value[0]和value[1]的值分别为1和2，而没有定义的初始化为0
 	int *pia = new int[10]; // 每个元素都没有初始化
+	cout << pia << endl;
 	int *pia2 = new int[10] ();  // 每个元素初始化为0
 
 	char pc[10]; //没有初始化，值不确定
@@ -23,6 +29,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << pc << endl;
 
 	char pc2[10] = {0};//这样写可以字符串数组元素全部初始化为0了
+	char * pc3 = new char[10]();
 
 	char a[] = "abc"; //记得后面还有0哦
 	unsigned int length = strlen(a) + 1; //4  记得后面还有0哦，所以要 + 1

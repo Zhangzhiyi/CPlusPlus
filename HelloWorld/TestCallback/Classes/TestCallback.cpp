@@ -12,11 +12,15 @@ void print(char *str);
 void estimate(void (*pc)(char*));
 int _tmain(int argc, _TCHAR* argv[])
 {
-	Student *a = new Student("Join",20);  
-	a->say();
+	Student *pStudent = new Student("Join",20); 
+	Person *pPerson = new Person();
+	pStudent->registerCallback(pPerson, &Person::callBack); //成员函数指针不能缺少&
+	//pStudent->registerCallback(pPerson, callFunc_selector(Person::callBack));
+	pStudent->say();
 
-	//函数指针
+	//函数指针 取地址运算符&不是必需的，因为单单一个函数标识符就标号表示了它的地址
 	FUNC_PRINTF pFunc = print;
+	//FUNC_PRINTF pFunc = &print;
 	//下面两种函数指针调用函数作用是一样
 	pFunc(1000);  
 	(*pFunc)(10000);
