@@ -1,0 +1,5 @@
+# ninja log v6
+1	165	1736325471539238582	testlib/CMakeFiles/Mylib.dir/src/Person.cpp.o	f68dcb25e40d467d
+165	190	1736325471703378718	testlib/libMylib.a	3770c34b9b4d228f
+11	701	1736326361011331086	CMakeFiles/HelloWorld.dir/main.cpp.o	2956d188b82ee5b0
+701	880	1736326361701117845	HelloWorld	69709cf8b8949bd3

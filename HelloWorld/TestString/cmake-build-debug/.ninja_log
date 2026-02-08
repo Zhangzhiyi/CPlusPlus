@@ -1,0 +1,5 @@
+# ninja log v6
+1	99	1735290484233831022	CMakeFiles/TestString.dir/src/md5.cpp.o	f6895c962a8cb7df
+1	330	1735290484233332679	CMakeFiles/TestString.dir/main.cpp.o	8ecf40a9022c9322
+1	369	1735290484233642268	CMakeFiles/TestString.dir/src/Utils.cpp.o	6050d86841742aef
+371	438	1735290484603363888	TestString	5663dd5dfc2a3755

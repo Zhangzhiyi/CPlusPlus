@@ -1,0 +1,6 @@
+/Users/wayen/CLionProjects/HelloWorld/cmake-build-debug/CMakeFiles/HelloWorld.dir
+/Users/wayen/CLionProjects/HelloWorld/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/wayen/CLionProjects/HelloWorld/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/wayen/CLionProjects/HelloWorld/cmake-build-debug/testlib/CMakeFiles/Mylib.dir
+/Users/wayen/CLionProjects/HelloWorld/cmake-build-debug/testlib/CMakeFiles/edit_cache.dir
+/Users/wayen/CLionProjects/HelloWorld/cmake-build-debug/testlib/CMakeFiles/rebuild_cache.dir

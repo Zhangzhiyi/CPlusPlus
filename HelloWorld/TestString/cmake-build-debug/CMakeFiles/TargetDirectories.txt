@@ -1,0 +1,3 @@
+/Users/wayen/CLionProjects/HelloWorld/TestString/cmake-build-debug/CMakeFiles/TestString.dir
+/Users/wayen/CLionProjects/HelloWorld/TestString/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/wayen/CLionProjects/HelloWorld/TestString/cmake-build-debug/CMakeFiles/rebuild_cache.dir

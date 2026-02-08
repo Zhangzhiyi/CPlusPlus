@@ -1,0 +1,16 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/wayen/CLionProjects/HelloWorld -B /Users/wayen/CLionProjects/HelloWorld/cmake-build-debug
+-- PROJECT_SOURCE_DIR => /Users/wayen/CLionProjects/HelloWorld
+-- PROJECT_BINARY_DIR => /Users/wayen/CLionProjects/HelloWorld/cmake-build-debug
+-- CMAKE_CURRENT_LIST_FILE => /Users/wayen/CLionProjects/HelloWorld/CMakeLists.txt
+-- CMAKE_SOURCE_DIR => /Users/wayen/CLionProjects/HelloWorld
+Debug build
+-- hello, world
+-- test_string after append => hello, world alibaba
+-- abcdef
+test_list after append => a;b;c;d;e;f;1;2;3;4
+-- ON
+-- This is a custom function!
+-- CMAKE_SOURCE_DIR => /Users/wayen/CLionProjects/HelloWorld
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/wayen/CLionProjects/HelloWorld/cmake-build-debug
